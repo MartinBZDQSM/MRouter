@@ -11,6 +11,7 @@ import javax.lang.model.element.Element;
 import javax.lang.model.element.TypeElement;
 
 import szkingdom.kds.annotation.Router;
+import szkingdom.kds.utils.Logger;
 
 /**
  * author:hy 2017/12/29.
@@ -21,9 +22,8 @@ public class MRouterProcessor extends AbstractProcessor{
 
     @Override
     public boolean process(Set<? extends TypeElement> annotations, RoundEnvironment roundEnv) {
-        System.out.println("process");
+        System.out.println("MRouterProcessor  process");
         processRouter(roundEnv);
-
         return false;
     }
 
